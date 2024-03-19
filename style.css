@@ -1,20 +1,45 @@
-*{
-    width: 300px;
-    margin: 50px auto;
-    padding: 10px;
+.calculator {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #201e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
 }
 
-.calculator{
-    background-color: rgb(91, 236, 229);
-    justify-items: grid;
+#display {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
 }
 
-.button{
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
 
-    width: 30px;
+button {
     padding: 10px;
-    margin: 5px px 1%;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(12, 136, 245);
+    cursor: pointer;
+    background-color: #a8ebdc;
+    color: rgb(15, 14, 14);
+}
+
+button:hover {
+    background-color: #00ffb3;
+}
+
+button:active {
+    background-color: #1c3a1d;
+}
+
+body{
+    background-image: url(pexels-anete-lusina-5239793.jpg); background-position: top;
+     background-size:cover;
 }
